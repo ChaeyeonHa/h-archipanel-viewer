@@ -1,0 +1,44 @@
+{
+  "visual_nodes": [
+    {
+      "id": "Entrance",
+      "label": "Entrance",
+      "zone": "public",
+      "floor": 1,
+      "x": 200,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Living",
+      "label": "Living Room",
+      "zone": "semi-private",
+      "floor": 1,
+      "x": 500,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Kitchen",
+      "label": "Kitchen",
+      "zone": "private",
+      "floor": 1,
+      "x": 800,
+      "y": 250,
+      "radius": 40
+    }
+  ],
+
+  "visual_edges": [
+    {
+      "source": "Entrance",
+      "target": "Living",
+      "strength": "strong"
+    },
+    {
+      "source": "Living",
+      "target": "Kitchen",
+      "strength": "strong"
+    }
+  ]
+}

@@ -10,35 +10,315 @@
       "radius": 40
     },
     {
-      "id": "Living",
-      "label": "Living Room",
-      "zone": "semi-private",
+      "id": "Mudroom",
+      "label": "Mudroom",
+      "zone": "semi-public",
       "floor": 1,
-      "x": 500,
+      "x": 600,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Living Room",
+      "label": "Living Room",
+      "zone": "public",
+      "floor": 1,
+      "x": 200,
       "y": 250,
       "radius": 40
     },
     {
       "id": "Kitchen",
       "label": "Kitchen",
-      "zone": "private",
+      "zone": "semi-public",
       "floor": 1,
-      "x": 800,
+      "x": 600,
       "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Dining Area",
+      "label": "Dining Area",
+      "zone": "public",
+      "floor": 1,
+      "x": 200,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Pantry",
+      "label": "Pantry",
+      "zone": "semi-public",
+      "floor": 1,
+      "x": 600,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Guest Bathroom",
+      "label": "Guest Bathroom",
+      "zone": "public",
+      "floor": 1,
+      "x": 200,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Home Office",
+      "label": "Home Office",
+      "zone": "semi-public",
+      "floor": 1,
+      "x": 600,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Stair",
+      "label": "Stair",
+      "zone": "public",
+      "floor": 1,
+      "x": 200,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Terrace",
+      "label": "Terrace",
+      "zone": "public",
+      "floor": 1,
+      "x": 200,
+      "y": 250,
+      "radius": 40
+    },
+    {
+      "id": "Master Bedroom",
+      "label": "Master Bedroom",
+      "zone": "private",
+      "floor": 2,
+      "x": 1000,
+      "y": 650,
+      "radius": 40
+    },
+    {
+      "id": "Master Bathroom",
+      "label": "Master Bathroom",
+      "zone": "private",
+      "floor": 2,
+      "x": 1000,
+      "y": 650,
+      "radius": 40
+    },
+    {
+      "id": "Bedroom 2",
+      "label": "Bedroom 2",
+      "zone": "private",
+      "floor": 2,
+      "x": 1000,
+      "y": 650,
+      "radius": 40
+    },
+    {
+      "id": "Bedroom 3",
+      "label": "Bedroom 3",
+      "zone": "private",
+      "floor": 2,
+      "x": 1000,
+      "y": 650,
+      "radius": 40
+    },
+    {
+      "id": "Shared Bathroom",
+      "label": "Shared Bathroom",
+      "zone": "semi-public",
+      "floor": 2,
+      "x": 600,
+      "y": 650,
+      "radius": 40
+    },
+    {
+      "id": "Laundry",
+      "label": "Laundry",
+      "zone": "public",
+      "floor": 2,
+      "x": 200,
+      "y": 650,
+      "radius": 40
+    },
+    {
+      "id": "Landing/Study Nook",
+      "label": "Landing/Study Nook",
+      "zone": "semi-public",
+      "floor": 2,
+      "x": 600,
+      "y": 650,
+      "radius": 40
+    },
+    {
+      "id": "Balcony",
+      "label": "Balcony",
+      "zone": "public",
+      "floor": 2,
+      "x": 200,
+      "y": 650,
       "radius": 40
     }
   ],
-
   "visual_edges": [
     {
       "source": "Entrance",
-      "target": "Living",
-      "strength": "strong"
+      "target": "Mudroom",
+      "strength": "strong",
+      "line_type": "solid"
     },
     {
-      "source": "Living",
+      "source": "Entrance",
+      "target": "Living Room",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Entrance",
+      "target": "Guest Bathroom",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Mudroom",
       "target": "Kitchen",
-      "strength": "strong"
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Mudroom",
+      "target": "Guest Bathroom",
+      "strength": "medium",
+      "line_type": "dashed"
+    },
+    {
+      "source": "Living Room",
+      "target": "Dining Area",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Living Room",
+      "target": "Home Office",
+      "strength": "medium",
+      "line_type": "dashed"
+    },
+    {
+      "source": "Living Room",
+      "target": "Stair",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Kitchen",
+      "target": "Dining Area",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Kitchen",
+      "target": "Pantry",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Dining Area",
+      "target": "Terrace",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Pantry",
+      "target": "Laundry",
+      "strength": "medium",
+      "line_type": "dashed"
+    },
+    {
+      "source": "Home Office",
+      "target": "Entrance",
+      "strength": "medium",
+      "line_type": "dashed"
+    },
+    {
+      "source": "Home Office",
+      "target": "Stair",
+      "strength": "medium",
+      "line_type": "dashed"
+    },
+    {
+      "source": "Stair",
+      "target": "Landing/Study Nook",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Master Bedroom",
+      "target": "Master Bathroom",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Master Bedroom",
+      "target": "Landing/Study Nook",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Master Bedroom",
+      "target": "Balcony",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Master Bathroom",
+      "target": "Laundry",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Bedroom 2",
+      "target": "Shared Bathroom",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Bedroom 2",
+      "target": "Landing/Study Nook",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Bedroom 3",
+      "target": "Shared Bathroom",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Bedroom 3",
+      "target": "Landing/Study Nook",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Shared Bathroom",
+      "target": "Landing/Study Nook",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Laundry",
+      "target": "Shared Bathroom",
+      "strength": "strong",
+      "line_type": "solid"
+    },
+    {
+      "source": "Landing/Study Nook",
+      "target": "Balcony",
+      "strength": "medium",
+      "line_type": "dashed"
     }
   ]
 }
